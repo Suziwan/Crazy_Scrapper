@@ -1,8 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
-PAGE_URL = 'https://coinmarketcap.com/all/views/all/'
 
-page = Nokogiri::HTML(URI.open(PAGE_URL))
+page = Nokogiri::HTML(URI.open('https://coinmarketcap.com/all/views/all/'))
 
 def scrap_names(page)
   names_array = [] # Creating an empty array for names

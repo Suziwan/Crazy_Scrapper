@@ -32,7 +32,7 @@ end
 
 describe "the perform method" do
   it "should not raise any error" do
-    expect{perform(page)}.to_not raise_error(StandardError)
+    expect{perform(page)}.to_not raise_error
   end
   it "should not give empty values (nil)" do
     expect(perform(page)).to_not eq(nil)
